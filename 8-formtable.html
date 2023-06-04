@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>task 8</title>
+        <style>
+            #link{
+                text-align:end;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: blue;">Registration Form</h1>
+        <form>
+            <table border="1" width="75%" class="centre" >
+            <tr>
+                <th><label for="fname">First Name:</label>  </th>
+                <td><input type="text" name="fname" size="120" ></td>
+            </tr>
+            <tr>
+                <th><label for="lname">Last Name:</label></th>
+                <td><input type="text" name="lname" size="120"></td>
+            </tr>
+            <tr>
+                <th><label for="email">Email:</label></th>
+                <td><input type="email" name="email" size="120"></td>
+            </tr>
+            <tr>
+                <th rowspan="2"><label for="gender">Gender:</label></th>
+                <td>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label></td>
+            <tr>
+                    <td><input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label></td>
+            </tr>
+            <tr>
+                <th><label for="age">Age:</label></th>
+                <td><input type="number" name="age"></td>
+            </tr>
+            <tr>
+                <th><label for="phone">Phone Number:</label></th>
+                <td><input type="number" name="phone" ></td>
+            </tr>
+            <tr>
+                <th><label for="address">Address:</label></th>
+                <td><textarea name="address" id="address" cols="116" rows="7"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="state">State:</label></th>
+                <td><input type="text" name="state" size="120"></td>
+            </tr>
+            <tr>
+                <th><label for="country">Country:</label></th>
+                <td>
+                    <select name="country" id="country">
+                        <option>choose your country</option>
+                        <option value="india">India</option>
+                        <option value="nepal">Nepal</option>
+                        <option value="pakistan">Pakistan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr >
+                <th><label for="language">Language known:</label></t>
+                <td>
+                    <input type="checkbox" name="english" id="english">
+                    <label for="english">English</label>
+                    <input type="checkbox" name="kannada" id="kannada">
+                    <label for="kannada">Kannada</label>
+                    <input type="checkbox" name="hindi" id="hindi">
+                    <label for="hindi">Hindi</label>
+                    <input type="checkbox" name="telugu" id="telugu">
+                    <label for="telugu">Telugu</label>
+                </td>
+            </tr>
+            <tr >
+                <td colspan="2"><input type="checkbox" name="declare" id="declare">
+                    <label for="">Hereby I declare all the  given detals are true</label></td>
+            </tr>
+            <tr>
+                <td id="link" colspan="2">Log in to <a href="#">Ethunus</a>Website</td>
+            </tr>
+            </table>
+            <p><input style="position:relative;left:300px" type="submit" value="Register" ></p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript demo 1</title>
+    </head>
+    <body>
+        <h2>ARITHMETIC OPERATORS</h2>
+        1st Number:<input type="number" id="x" ></br></br>
+        2nd Number:<input type="number" id="y"></br></br>
+        <button onclick="f1()">Add</button>
+        <button onclick="f2()">Sub</button>
+        <button onclick="f3()">Multiply</button>
+        <button onclick="f4()">Division</button>
+        <p>Result:</p>
+        <p id="re"></p>
+        <script>
+            function f1()
+            {
+                var a=+(document.getElementById("x").value);
+                var b=+(document.getElementById("y").value);
+                document.getElementById("re").innerHTML=(a+b);
+            }
+            function f2()
+            {
+                let a=document.getElementById("x").value;
+                let b=document.getElementById("y").value;
+                document.getElementById("re").innerHTML=(a-b);
+            }
+            function f3()
+            {
+                let a=document.getElementById("x").value;
+                let b=document.getElementById("y").value;
+                document.getElementById("re").innerHTML=(a*b);
+            }
+            function f4()
+            {
+                let a=document.getElementById("x").value;
+                let b=document.getElementById("y").value;
+                document.getElementById("re").innerHTML=(a/b);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Js-task2</title>
+        <style>
+            .heading{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width:100%;
+               
+            }
+            .buttons{
+                display:flex;
+                flex-direction:row;
+                justify-content: space-evenly;
+
+            }
+            .links{
+                display:flex;
+                flex-direction:row;
+                justify-content: space-evenly;
+
+            }
+        </style>
+        <script type="text/javascript">
+            function Redirect1()
+            {
+                location.href="page2.html"
+            }
+            function Redirect2()
+            {
+                location.href="page3.html"
+            }
+            function Redirect3()
+            {
+                location.href="page1.html"
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="heading">
+        <h1>Page1</h1>
+        <h1>Page2</h1>
+        <h1>Page3</h1>
+        </div>
+        <div class="links">
+            <a href="#">page2</a>
+            <a href="#">page3</a>
+            <a href="#">page1</a>
+        </div>
+        <div class="buttons">
+            <input type="button" value="Next" onclick="Redirect1();">
+            <input type="button" value="Next" onclick="Redirect2();">
+            <input type="button" value="previous" onclick="Redirect3();">
+        </div>
+    </body>
+</html>
